@@ -2,7 +2,7 @@
 ### Equipe: 
 - Vinícius Paes Marcelino,
 - Gabriel Felix Faustina,
-- Welligton Corrêa Delfino,
+- Wellington Corrêa Delfino,
 - Luiz Fabiano,
 - Luiz Eduardo
 
