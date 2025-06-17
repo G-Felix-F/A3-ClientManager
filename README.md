@@ -1,5 +1,5 @@
 # Pesquisa de Integrações Assíncronas
-## Nome: Vinícius Paes Marcelino, Gabriel Felix Faustina, Welligton Corrêa Delfino, Luiz Fabiano, Luiz Eduardo
+### Nome: Vinícius Paes Marcelino, Gabriel Felix Faustina, Welligton Corrêa Delfino, Luiz Fabiano, Luiz Eduardo
 
 ## O que são Integrações Assíncronas?
 Definição:
@@ -16,13 +16,13 @@ Imagine que você está fazendo um pedido em um app de delivery:
 > Sincrono: Você faz o pedido e espera o restaurante responder imediatamente se aceitou ou não.
 > Assíncrono: Você faz o pedido, o sistema confirma o recebimento e você continua usando o app. A confirmação do restaurante vem depois.
 
- Como funciona uma integração assíncrona?
-Produtor envia uma mensagem para uma fila, tópico ou API reativa.
-A mensagem fica armazenada temporariamente em um intermediário (ex: Kafka, RabbitMQ).
-Consumidor consome a mensagem e processa de forma independente.
-Nenhuma das partes depende do tempo de resposta da outra.
+## Como funciona uma integração assíncrona?
+> Produtor envia uma mensagem para uma fila, tópico ou API reativa.
+> A mensagem fica armazenada temporariamente em um intermediário (ex: Kafka, RabbitMQ).
+> Consumidor consome a mensagem e processa de forma independente.
+> Nenhuma das partes depende do tempo de resposta da outra.
 
-Tecnologias Usadas em Integrações Assíncronas:
+## Tecnologias Usadas em Integrações Assíncronas:
 | Tecnologia |	Tipo |	Descrição breve |
 |-------|------------------------|---------------------------------------|
 | Kafka |	Mensageria distribuída | Alta performance, tolerância a falhas |
