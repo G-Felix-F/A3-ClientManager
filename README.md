@@ -11,7 +11,7 @@ Sincronismo	Assincronismo
 > Bloqueia a execução.	Não bloqueia a execução.
 > Exemplo: chamada REST tradicional (RestTemplate).	Exemplo: mensagem em fila (Kafka, RabbitMQ).
 
-## Exemplo Prático (Ilustração):
+## Exemplo Prático:
 Imagine que você está fazendo um pedido em um app de delivery:
 > Sincrono: Você faz o pedido e espera o restaurante responder imediatamente se aceitou ou não.
 > Assíncrono: Você faz o pedido, o sistema confirma o recebimento e você continua usando o app. A confirmação do restaurante vem depois.
@@ -30,18 +30,18 @@ Imagine que você está fazendo um pedido em um app de delivery:
 | WebFlux |	Reativo via HTTP | Assíncrono com Mono/Flux (Spring) |
 | AWS SQS |	Fila na nuvem (AWS)	| Escalável e gerenciado |
 
-Quando usar integrações assíncronas?
+## Quando usar integrações assíncronas?
 Casos ideais:
-Processos longos (como gerar relatórios, envio de e-mails).
-Alta concorrência (muitos pedidos ao mesmo tempo).
-Comunicação entre microsserviços.
-Tolerância a falhas e sistemas desacoplados.
- Evite quando:
-Você precisa da resposta imediatamente.
-A operação é crítica e exige confirmação direta.
+> Processos longos (como gerar relatórios, envio de e-mails).
+> Alta concorrência (muitos pedidos ao mesmo tempo).
+> Comunicação entre microsserviços.
+> Tolerância a falhas e sistemas desacoplados.
+Evite quando:
+> Você precisa da resposta imediatamente.
+> A operação é crítica e exige confirmação direta.
 
-Vantagens
- Escalabilidade: Serviços trabalham de forma independente.
- Performance: O sistema responde mais rápido ao usuário.
-Desacoplamento: Produtor e consumidor não precisam estar ativos ao mesmo tempo.
- Resiliência: Permite reprocessamento de falhas.
+## Vantagens
+> Escalabilidade: Serviços trabalham de forma independente.
+> Performance: O sistema responde mais rápido ao usuário.
+> Desacoplamento: Produtor e consumidor não precisam estar ativos ao mesmo tempo.
+> Resiliência: Permite reprocessamento de falhas.
